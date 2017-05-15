@@ -12,3 +12,7 @@ cp -f "greg.zsh-theme" $ZSHDIR
 source ~/.zshrc
 
 # TODO - check out and set up the zsh syntax highlighting plugin
+PLUGIN_DIR="$HOME/.oh-my-zsh/custom/plugins"
+SHL_DIR="$PLUGIN_DIR/zsh-syntax-highlighting"
+[ -d "$PLUGIN_DIR" ] || mkdir $PLUGIN_DIR
+[ -d "$SHL_DIR" ] || git clone git@github.com:zsh-users/zsh-syntax-highlighting.git $SHL_DIR
