@@ -206,11 +206,6 @@
 [difftool]
     prompt = false
 
-[user]
-	email = "greg.pascale@gmail.com"
-	name = "Greg Pascale"
-    signingkey = "2A3152570F84552EF2BA03F506A23D78C2E8FF36"
-
 
 [gpg]
     program = gpg
