@@ -1,0 +1,5 @@
+brew cask install hyperswitch
+brew cask install dash
+brew cask install bartender
+brew cask install keyboard-maestro
+brew cask install google-chromebrew cask install google-chrome
