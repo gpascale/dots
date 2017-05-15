@@ -106,6 +106,9 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+	editor = 'emacs'
+  autocrlf = false
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -208,8 +211,6 @@
 	name = "Greg Pascale"
     signingkey = "2A3152570F84552EF2BA03F506A23D78C2E8FF36"
 
-[core]
-    editor = 'emacs'
 
 [gpg]
     program = gpg
