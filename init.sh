@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+ #!/usr/bin/env zsh
 
 # Copy files to home directory
 rsync --exclude "*.zsh-theme" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "*~" -avc --no-perms . ~
