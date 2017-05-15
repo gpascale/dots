@@ -1,4 +1,4 @@
- #!/usr/bin/env zsh
+#!/usr/bin/env zsh
 
 # Copy files to home directory
 rsync --exclude "*.zsh-theme" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "*~" -avc --no-perms . ~
@@ -10,3 +10,5 @@ cp -f "greg.zsh-theme" $ZSHDIR
 
 # Source .bash_profile to have changes take effect
 source ~/.zshrc
+
+# TODO - check out and set up the zsh syntax highlighting plugin
