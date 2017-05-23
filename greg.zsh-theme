@@ -15,6 +15,5 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 POSTEDIT=$'\e[0m'
 zle_highlight=(default:bold)
-PROMPT='$fg[green]$(get_user)$fg[white]@$fg[yellow]%m $fg_bold[blue]$(get_pwd) %{$reset_color%}%{$fg[magenta]%}$(git_prompt_info)
+PROMPT='$fg[green]$(get_user)$fg[white]@$fg[yellow]%m $fg_bold[blue]$(get_pwd) %{$reset_color%}%{$fg[magenta]%}$(git_prompt_info)%{${fg[black]}%}%T
 %{$reset_color%}$fg[blue]➜%{$fg[white]%}  '
-RPROMPT="%{${fg[black]}%} %T"
