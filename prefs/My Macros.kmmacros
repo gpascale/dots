@@ -75,16 +75,6 @@
 						<key>ThenActions</key>
 						<array>
 							<dict>
-								<key>KeyCode</key>
-								<integer>124</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>2816</integer>
-								<key>ReleaseAll</key>
-								<false/>
-							</dict>
-							<dict>
 								<key>AllWindows</key>
 								<false/>
 								<key>AlreadyActivatedActionType</key>
@@ -104,6 +94,16 @@
 								<false/>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
+							</dict>
+							<dict>
+								<key>KeyCode</key>
+								<integer>124</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>2816</integer>
+								<key>ReleaseAll</key>
+								<false/>
 							</dict>
 							<dict>
 								<key>AllWindows</key>
@@ -134,7 +134,7 @@
 				<key>CreationDate</key>
 				<real>516417646.72898197</real>
 				<key>ModificationDate</key>
-				<real>516421873.76194698</real>
+				<real>517394338.52791601</real>
 				<key>Name</key>
 				<string>Toggle Code/Terminal</string>
 				<key>Triggers</key>
