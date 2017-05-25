@@ -16,3 +16,7 @@ PLUGIN_DIR="$HOME/.oh-my-zsh/custom/plugins"
 SHL_DIR="$PLUGIN_DIR/zsh-syntax-highlighting"
 [ -d "$PLUGIN_DIR" ] || mkdir $PLUGIN_DIR
 [ -d "$SHL_DIR" ] || git clone git@github.com:zsh-users/zsh-syntax-highlighting.git $SHL_DIR
+
+# Install some node modules globally
+npm install -g eslint
+npm install -g eslint-plugin-react
