@@ -1,0 +1,16 @@
+{
+  "config_path": "~/.eslintrc.json",
+  "debug": true,
+  "format_on_save": true,
+
+  // Only attempt to format files with whitelisted extensions on save.
+  // Leave empty to disable the check
+  "format_on_save_extensions": [
+    "js",
+    "jsx",
+    "json",
+    "es",
+    "es6",
+    "babel"
+  ],
+}

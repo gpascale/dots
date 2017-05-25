@@ -49,6 +49,15 @@
       {
         "allowSingleLine": true
       }
+    ],
+    "no-console": [
+      "warn"
+    ],
+    "no-debugger": [
+      "warn"
+    ],
+    "no-alert": [
+      "warn"
     ]
   }
 }
