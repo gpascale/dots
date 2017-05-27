@@ -21,3 +21,4 @@ SHL_DIR="$PLUGIN_DIR/zsh-syntax-highlighting"
 npm install -g eslint
 npm install -g eslint-plugin-react
 npm install -g eslint-plugin-json
+gem install scss-lint

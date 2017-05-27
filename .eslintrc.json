@@ -50,14 +50,8 @@
         "allowSingleLine": true
       }
     ],
-    "no-console": [
-      "warn"
-    ],
-    "no-debugger": [
-      "warn"
-    ],
-    "no-alert": [
-      "warn"
-    ]
+    "no-console": "off",
+    "no-debugger": "off",
+    "no-alert": "off"
   }
 }
