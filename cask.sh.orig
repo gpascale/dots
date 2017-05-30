@@ -10,5 +10,8 @@ brew cask install dash
 brew cask install alfred
 brew cask install nvalt
 brew cask install bettertouchtool
+<<<<<<< Updated upstream
 brew cask install macdown
+=======
 brew cask install wavebox
+>>>>>>> Stashed changes
