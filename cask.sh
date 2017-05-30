@@ -10,3 +10,4 @@ brew cask install dash
 brew cask install alfred
 brew cask install nvalt
 brew cask install bettertouchtool
+brew cask install macdown
