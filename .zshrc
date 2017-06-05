@@ -54,7 +54,7 @@ ZSH_THEME="greg"
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source .aliases
+source $HOME/.aliases
 
 # User configuration
 
