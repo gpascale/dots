@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Copy files to home directory
-rsync --exclude "*.zsh-theme" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "*~" -avc --no-perms . ~
+rsync --exclude "*.zsh-theme" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "*~" -avc --no-perms ./\.* ~
 
 # Copy over my custom ZSH theme
 ZSHDIR="$HOME/.oh-my-zsh/custom/themes"
@@ -17,8 +17,4 @@ SHL_DIR="$PLUGIN_DIR/zsh-syntax-highlighting"
 [ -d "$PLUGIN_DIR" ] || mkdir $PLUGIN_DIR
 [ -d "$SHL_DIR" ] || git clone git@github.com:zsh-users/zsh-syntax-highlighting.git $SHL_DIR
 
-# Install some node modules globally
-npm install -g eslint
-npm install -g eslint-plugin-react
-npm install -g eslint-plugin-json
-gem install scss-lint
+
