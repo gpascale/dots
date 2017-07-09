@@ -6,6 +6,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias subl="sublime"
+alias t="tmux"
 
 # Make tree print out sizes by default
 alias tree='tree -h'
