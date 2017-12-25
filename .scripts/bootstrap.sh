@@ -8,7 +8,6 @@ if [ $? = 0 ]; then
   echo "Checked out config.";
 else
   echo "Backing up pre-existing dot files.";
-  echo "FUCK `cfg checkout 2>&1 | egrep "^\s+(\w|\.)"`"
   cfg checkout 2>&1 | egrep "^\s+(\w|\.)" | awk '{$1=$1};1' | while read LINE; do
     FILE=$LINE
     DIR=`dirname "$FILE" | awk '{$1=$1};1'`
