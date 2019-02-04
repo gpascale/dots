@@ -1,5 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$(yarn global bin):$HOME/miniconda3/bin:$PATH
+# Path variable is configured in .zprofile
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -85,3 +84,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Load direnv
+eval "$(direnv hook zsh)"
+alias config='/usr/bin/git --git-dir=/Users/gtp/.cfg/ --work-tree=/Users/gtp'

@@ -9,6 +9,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias subl="sublime"
 alias t="tmux"
+alias n="npm"
+alias cdf="config"
 
 export PATH=$PATH:~/anaconda/bin
 
