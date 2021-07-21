@@ -9,7 +9,7 @@
   s = status
 
   # Show the diff between the latest commit and the current state
-  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-page diff --patch-with-stat"
 
   # `git di $number` shows the diff between the state `$number` revisions ago and the current state
   di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
@@ -26,9 +26,19 @@
 
   # Commit all changes
   co = commit
-  
+
+  # Commit (amend)
+  ca = commit --amend
+  cane = commit --amend --no-edit
+
+  # Checkout
+  ch = checkout
+
   # Switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+  # push origin
+  po = push origin
 
   # Show verbose output about tags, branches or remotes
   tags = tag -l
@@ -134,11 +144,7 @@
   changed = green
   untracked = cyan
 
-[commit]
-
-  # https://help.github.com/articles/signing-commits-using-gpg/
-  gpgsign = true
-
+ 
 [diff]
 
   # Detect copies as well as renames
@@ -167,7 +173,7 @@
   # Use the Git 1.x.x default to avoid errors on machines with old Git
   # installations. To use `simple` instead, add this to your `~/.extra` file:
   # `git config --global push.default simple`. See http://git.io/mMah-w.
-  default = matching
+	default = current
   # Make `git push` push relevant annotated tags when pushing branches out.
   followTags = true
 
@@ -178,6 +184,7 @@
   insteadOf = "gh:"
   pushInsteadOf = "github:"
   pushInsteadOf = "git://github.com/"
+	insteadOf = https://github.com/
 
 [url "git://github.com/"]
 
@@ -199,8 +206,8 @@
 [merge]
   tool = bcomp
 [mergetool "bcomp"]
+  cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
   trustExitCode = true
-  cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
   prompt = false
 [difftool "bcomp"]
   cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
@@ -215,3 +222,7 @@
 
 [include]
     path = .git-credentials
+[branch]
+	autosetuprebase = always
+[mergetool "bc3"]
+	trustExitCode = true

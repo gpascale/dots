@@ -11,8 +11,26 @@ alias subl="sublime"
 alias t="tmux"
 alias n="npm"
 alias cdf="config"
+alias code="code-insiders"
+alias c2j="csvtojson"
+alias iplogstage="~/git/interprime/platform/api/tail-logs.sh staging"
+alias iplogprod="~/git/interprime/platform/api/tail-logs.sh production"
+alias ipsshprod="(cd ~/git/interprime/platform/api && eb ssh api-prod)"
+alias jupy="/Users/gtp/opt/anaconda3/envs/jupy/bin/jupyter-notebook --no-browser --NotebookApp.token='' --notebook-dir='/Users/gtp/git'"
+alias xl="open -a \"Microsoft Excel\""
+alias h=history
+alias y=yarn
+alias clab=clone-and-browse
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
-export PATH=$PATH:~/anaconda/bin
+#docker commands
+docker_attach () {
+    #do things with parameters like $1 such as
+    docker exec -it "$1" /bin/bash
+}
+alias da=docker_attach
+
+export PATH=$PATH:~/opt/anaconda3/bin
 
 # Make tree print out sizes by default
 alias tree='tree -h'

@@ -55,36 +55,39 @@ plugins=(git zsh-syntax-highlighting z encode64 jsontools compleat npm rand-quot
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 source $HOME/.functions.sh
+source $HOME/.aws/.creds
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='emacs'
 else
   export EDITOR='emacs'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Load direnv
 eval "$(direnv hook zsh)"
 alias config='/usr/bin/git --git-dir=/Users/gtp/.cfg/ --work-tree=/Users/gtp'
+
+export POSTGRES_DIR="/Users/gtp/Library/Application Support/Postgres/var-11"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/gtp/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/gtp/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/gtp/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/gtp/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+eval "$(direnv hook zsh)"
+
+nvm use v12.20.0

@@ -1,0 +1,109 @@
+{
+  "editor.fontSize": 22,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "json.format.enable": true,
+  "workbench.colorTheme": "Better Blackboard",
+  "workbench.tree.indent": 24,
+  "files.exclude": {
+    ".netlify": true,
+    ".vscode": true,
+    "*.pyc": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/yarn.lock": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.chunk.js": true,
+    "**/*.js.map": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/build/*": true,
+    "**/*.orig": true
+  },
+  "scss.lint.boxModel": "warning",
+  "scss.lint.duplicateProperties": "error",
+  "scss.lint.float": "warning",
+  "typescript.preferences.quoteStyle": "single",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.quote": "`",
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.lineHeight": 1.2,
+  "[plaintext]": {
+    "editor.wordWrap": "on"
+  },
+  "python.insidersChannel": "off",
+  "python.jediEnabled": false,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml",
+    "editor.formatOnSave": false
+  },
+  "editor.glyphMargin": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "workbench.iconTheme": "simple-icons",
+  "workbench.editor.showTabs": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "files.associations": {
+    "*.ACC": "csv (pipe)",
+    "*.RLD": "csv (pipe)",
+    "*.RPS": "csv (pipe)",
+    "*.SEC": "csv (pipe)",
+    "*.TCF": "csv (pipe)",
+    "*.TRN": "csv (pipe)",
+    "*.ULN": "csv (pipe)",
+    "*.ULT": "csv (pipe)",
+    "*.UPN": "csv (pipe)",
+    "*.UPT": "csv (pipe)",
+    "*.BLD": "csv (pipe)",
+  },
+  "python.languageServer": "Pylance",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "sqltools.formatLanguages": [],
+  "[sql]": {
+    "editor.formatOnSave": false
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  }
+}
