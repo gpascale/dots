@@ -3,6 +3,11 @@ function mingz () {
     curl -sL wzrd.in/standalone/"$1"|uglifyjs -mc 2>/dev/null|gzip -c|wc -c;
 }
 
+docker_attach () {
+    #do things with parameters like $1 such as
+    docker exec -it "$1" /bin/bash
+}
+
 function docker-kill-all() {
     docker kill $(docker ps -qa)
 }

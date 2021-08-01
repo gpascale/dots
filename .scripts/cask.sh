@@ -8,3 +8,4 @@ brew install --cask bettertouchtool
 brew install --cask firefox
 brew install --cask visual-studio-code
 brew install --cask dash
+brew install --cask postico
