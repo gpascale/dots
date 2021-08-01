@@ -1,4 +1,4 @@
-git clone --bare https://github.com/gpascale/dots2.git $HOME/.cfg
+git clone --bare https://github.com/gpascale/dots.git $HOME/.cfg
 function cfg {
    git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }

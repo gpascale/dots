@@ -1,4 +1,3 @@
-brew install --cask dash
 brew install --cask bartender
 brew install --cask keyboard-maestro
 brew install --cask google-chrome
@@ -8,3 +7,4 @@ brew install --cask alfred
 brew install --cask bettertouchtool
 brew install --cask firefox
 brew install --cask visual-studio-code
+brew install --cask dash

@@ -91,3 +91,4 @@ export PATH="$HOME/.serverless/bin:$PATH"
 eval "$(direnv hook zsh)"
 
 nvm use v12.20.0
+
