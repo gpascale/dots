@@ -9,3 +9,6 @@ brew install --cask firefox
 brew install --cask visual-studio-code
 brew install --cask dash
 brew install --cask postico
+brew install --cask 1password
+brew install --cask iterm2
+brew install --cask logitech-options

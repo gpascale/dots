@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 
 # ~/.macos — https://mths.be/macos
@@ -155,8 +156,8 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+# defaults write NSGlobalDomain KeyRepeat -int 1
+# defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -950,12 +951,11 @@ for app in "Activity Monitor" \
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
-
-
 #################################################################################
 GREG CUSTOMIZATIONS
 
 # initial key repeat of 10 is a little too fast - accidentally spam key when trying to hit once
+defaults write NSGlobalDomain KeyRepeat -int 1.5
 defaults write NSGlobalDomain InitialKeyRepeat -int 17
 
 # Completely disable the dock (from https://apple.stackexchange.com/questions/59556/is-there-a-way-to-completely-disable-dock)

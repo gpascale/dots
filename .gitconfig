@@ -206,11 +206,11 @@
 [merge]
   tool = bcomp
 [mergetool "bcomp"]
-  cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+  cmd = "bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
   trustExitCode = true
   prompt = false
 [difftool "bcomp"]
-  cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+  cmd = bcomp \"$LOCAL\" \"$REMOTE\"
   prompt = false
 [difftool]
   prompt = false
@@ -226,3 +226,6 @@
 	autosetuprebase = always
 [mergetool "bc3"]
 	trustExitCode = true
+[user]
+	name = Greg Pascale
+	email = greg.pascale@gmail.com

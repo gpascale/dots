@@ -3,7 +3,10 @@
 set -e
 
 ###############################################################################
-# Do some final zsh setup
+# Setup zsh
+
+# Install oh-my-zsh if needed
+[ ! -d "$HOME/.oh-my-zsh" ] && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Copy over my custom ZSH theme
 ZSH_CUSTOM_THEMES_DIR="$HOME/.oh-my-zsh/custom/themes"
@@ -30,6 +33,7 @@ cp -r "$APP_SETTINGS_DIR/BetterSnapTool/." "$PREFS_DIR"
 
 # VS Code
 cp -r "$APP_SETTINGS_DIR/VSCode/." "$APP_SUPPORT_DIR/Code"
+cat "~/.appsettings/VSCode/extensions.txt" | xargs -I {} code --install-extension {} #install  extensions
 
 # Make changes take effect
 source ~/.zshrc

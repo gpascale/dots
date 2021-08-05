@@ -1,5 +1,5 @@
 # set up "config" command for managing dotfiles repo
-alias config='/usr/bin/git --git-dir=/Users/gtp/.cfg/ --work-tree=/Users/gtp'
+alias cfg='/usr/bin/git --git-dir=/Users/gtp/.cfg/ --work-tree=/Users/gtp'
 
 # zsh configuration
 export ZSH=$HOME/.oh-my-zsh

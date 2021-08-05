@@ -3,7 +3,7 @@
 # 
 
 # Homebrew installations
-PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
 # Anaconda
 export PATH=$PATH:~/opt/anaconda3/bin
 # Personal Scripts
