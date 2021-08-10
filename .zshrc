@@ -38,3 +38,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 nvm use v12.20.0
 
+
+source /Users/gtp/.config/broot/launcher/bash/br

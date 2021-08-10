@@ -229,3 +229,5 @@
 [user]
 	name = Greg Pascale
 	email = greg.pascale@gmail.com
+[pull]
+	ff = only
