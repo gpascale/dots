@@ -23,3 +23,16 @@ function docker-full-reset() {
     docker-remove-all-containers
     docker-remove-all-images
 }
+
+function killbypid() {
+}
+
+function killbyname() {
+    procs=(${(f)"$(ps aux | grep "$1" | grep -v grep | tr -s ' ')"})
+    for proc in $procs; do
+	pid=$(echo $proc | cut -d ' ' -f 2)
+	name=$(echo $proc | cut -d ' ' -f 11)
+	echo "killing $name ($pid)"
+	kill -9 $pid
+    done
+}
