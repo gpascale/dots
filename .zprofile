@@ -2,6 +2,10 @@
 # PATH additions
 # 
 
+if [ -f "$HOME/.zprofile.local" ]; then
+  source "$HOME/.zprofile.local"
+fi
+
 # Homebrew installations
 PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
 # Anaconda
@@ -15,3 +19,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Random other env vars and stuff
 
 export POSTGRES_DIR="/Users/gtp/Library/Application Support/Postgres/var-11"
+

@@ -17,14 +17,14 @@ source $HOME/.aws/.creds
 # Conda setup. Do not edit this
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/gtp/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('$CONDA_DIR/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/gtp/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/gtp/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "$CONDA_DIR/etc/profile.d/conda.sh" ]; then
+        . "$CONDA_DIR/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/gtp/opt/anaconda3/bin:$PATH"
+        export PATH="$CONDA_DIR/bin:$PATH"
     fi
 fi
 unset __conda_setup

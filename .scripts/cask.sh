@@ -12,3 +12,4 @@ brew install --cask postico
 brew install --cask 1password
 brew install --cask iterm2
 brew install --cask logitech-options
+brew install --cask tunnelblick
