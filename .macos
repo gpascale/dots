@@ -952,7 +952,7 @@ done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
 #################################################################################
-GREG CUSTOMIZATIONS
+# GREG CUSTOMIZATIONS
 
 # initial key repeat of 10 is a little too fast - accidentally spam key when trying to hit once
 defaults write NSGlobalDomain KeyRepeat -int 1.5

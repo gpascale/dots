@@ -3,6 +3,18 @@
 set -e
 
 ###############################################################################
+# Install homebrew and software
+
+if ! command -v "brew"; then
+  echo "Homebrew is not installed. Instailling..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+echo "Installing software from Homebrew..."
+./brew.sh
+echo "Installing software (casks) from Homebrew..."
+./cask.sh
+
+###############################################################################
 # Setup zsh
 
 # Install oh-my-zsh if needed

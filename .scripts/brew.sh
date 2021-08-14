@@ -14,3 +14,4 @@ brew install ffmpeg
 brew install awswebcli
 brew install absebcli
 brew install broot
+brew install nvm

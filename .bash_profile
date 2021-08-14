@@ -35,3 +35,5 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+source /Users/gtp/.config/broot/launcher/bash/br

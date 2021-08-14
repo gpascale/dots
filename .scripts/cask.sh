@@ -13,3 +13,5 @@ brew install --cask 1password
 brew install --cask iterm2
 brew install --cask logitech-options
 brew install --cask tunnelblick
+brew install --cask bartender
+brew install --cask spotify
