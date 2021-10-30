@@ -30,9 +30,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Load direnv
-eval "$(direnv hook zsh)"
-
 # nvm (node)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_INSTALL_DIR/nvm.sh" ] && \. "$NVM_INSTALL_DIR/nvm.sh"  # This loads nvm
@@ -40,6 +37,11 @@ nvm use v12.20.0
 
 source /Users/gtp/.config/broot/launcher/bash/br
 
+
 if [ -f "$HOME/.zshrc.local" ]; then
   source "$HOME/.zshrc.local"
 fi
+
+# Initialize direnv
+eval "$(direnv hook zsh)"
+
