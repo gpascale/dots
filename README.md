@@ -1,3 +1,7 @@
-My dotfiles!
+Usage:
 
-Largely inspired by https://github.com/mathiasbynens/dotfiles, though I've only selectively taken certain files to make sure I understand everything that's happening. Adapted for zsh somewhat.
+1. git clone --bare https://github.com/gpascale/dots.git $HOME/.cfg
+
+2. ./scripts/.bootstrap.sh
+
+3. ./scripts/.install.sh

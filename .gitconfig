@@ -231,3 +231,5 @@
 	email = greg.pascale@gmail.com
 [pull]
 	ff = only
+[init]
+	defaultBranch = main

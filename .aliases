@@ -26,7 +26,7 @@ alias tree='tree -h' # Make tree print out sizes by default
 alias da=docker_attach
 alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=SharedArrayBuffer & >/dev/null 2>&1'
-
+alias curl='curl --silent'
 
 ###############################################################################
 # Random stuff from Matthias Bynen's dotfiles
