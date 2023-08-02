@@ -15,24 +15,6 @@ echo "Installing software (casks) from Homebrew..."
 ./cask.sh
 
 ###############################################################################
-# Setup zsh
-
-# Install oh-my-zsh if needed
-[ ! -d "$HOME/.oh-my-zsh" ] && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Copy over my custom ZSH theme
-ZSH_CUSTOM_THEMES_DIR="$HOME/.oh-my-zsh/custom/themes"
-[ -d "$ZSH_CUSTOM_THEMES_DIR" ] || mkdir $ZSH_CUSTOM_THEMES_DIR
-cp -f "$HOME/.appsettings/zsh/greg.zsh-theme" $ZSH_CUSTOM_THEMES_DIR
-
-# Check out and set up the zsh syntax highlighting plugin
-ZSH_CUSTOM_PLUGIN_DIR="$HOME/.oh-my-zsh/custom/plugins"
-SHL_DIR="$ZSH_CUSTOM_PLUGIN_DIR/zsh-syntax-highlighting"
-[ -d "$ZSH_CUSTOM_PLUGIN_DIR" ] || mkdir $ZSH_CUSTOM_PLUGIN_DIR
-[ -d "$SHL_DIR" ] || git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $SHL_DIR
-
-
-###############################################################################
 # Copy over app settings
 
 APP_SETTINGS_DIR="$HOME/.appsettings"

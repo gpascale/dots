@@ -4,12 +4,8 @@
 
 # Homebrew installations
 PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
-# Anaconda
-export PATH=$PATH:~/opt/anaconda3/bin
 # Personal Scripts
 PATH=$HOME/scripts:$PATH
-# rvm (ruby version manager?)
-export PATH="$PATH:$HOME/.rvm/bin"
 
 ###############################################################################
 # Random other env vars and stuff
@@ -21,3 +17,8 @@ export CONDA_DIR="$HOME/anaconda3"
 if [ -f "$HOME/.zprofile.local" ]; then
   source "$HOME/.zprofile.local"
 fi
+
+# Setting PATH for Python 3.11
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
+export PATH

@@ -1,7 +1,6 @@
 brew update
 brew upgrade
 
-brew install absebcli
 brew install awswebcli
 brew install broot
 brew install cmake
@@ -10,7 +9,6 @@ brew install emacs
 brew install ffmpeg
 brew install imagemagick
 brew install jq
-brew install nvm
 brew install nvm
 brew install rsync
 brew install speedtest-cli

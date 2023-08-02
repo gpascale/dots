@@ -152,4 +152,49 @@
     "command": "-editor.action.indentLines",
     "when": "editorTextFocus && !editorReadonly"
   },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "notebook.cell.execute",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code'"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "notebook.cell.insertCodeCellBelow",
+    "when": "notebookCellListFocused"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "notebook.cell.insertCodeCellAbove",
+    "when": "notebookCellListFocused"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "notebook.focusNextEditor",
+    "when": "notebookCellListFocused"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "notebook.focusPreviousEditor",
+    "when": "notebookCellListFocused"
+  },
+  {
+    "key": "cmd+alt+down",
+    "command": "notebook.cell.moveDown",
+    "when": "notebookCellListFocused"
+  },
+  {
+    "key": "cmd+alt+up",
+    "command": "notebook.cell.moveUp",
+    "when": "notebookCellListFocused"
+  },
 ]
