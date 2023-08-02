@@ -27,7 +27,7 @@ cp -r "$APP_SETTINGS_DIR/BetterSnapTool/." "$PREFS_DIR"
 
 # VS Code
 cp -r "$APP_SETTINGS_DIR/VSCode/." "$APP_SUPPORT_DIR/Code"
-cat "~/.appsettings/VSCode/extensions.txt" | xargs -I {} code --install-extension {} #install  extensions
+cat "$HOME/.appsettings/VSCode/extensions.txt" | xargs -I {} code --install-extension {} #install  extensions
 
 # Make changes take effect
 source ~/.zshrc

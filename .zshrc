@@ -17,6 +17,18 @@ export _Z_CMD=z
 source $HOME/.aliases
 source $HOME/.functions.sh
 
+# nvm (node)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_INSTALL_DIR/nvm.sh" ] && \. "$NVM_INSTALL_DIR/nvm.sh"  # This loads nvm
+
+# M1 env stuff
+# arch_name="$(uname -m)"
+# if [ "${arch_name}" = "x86_64" ]; then
+#   nvm use x86
+# elif [ "${arch_name}" = "arm64" ]; then
+#   nvm use arm
+# fi
+
 setopt autocd
 
 if [ -f "$HOME/.zshrc.local" ]; then

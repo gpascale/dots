@@ -1,3 +1,7 @@
+if [ -f "$HOME/.aliases.local" ]; then
+  source "$HOME/.aliases.local"
+fi
+
 alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 ###############################################################################
@@ -21,13 +25,15 @@ alias xl="open -a \"Microsoft Excel\""
 alias h=history
 alias y=yarn
 alias clab=clone-and-browse
-alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias tree='tree -h' # Make tree print out sizes by default
 alias da=docker_attach
 alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=SharedArrayBuffer & >/dev/null 2>&1'
 alias curl='curl --silent'
 alias axon='ssh -t axon "cd /home/greg/git/emotiv-ml; zsh --login"'
+alias x86='env /usr/bin/arch -x86_64 /bin/zsh --login'
+alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
+
 
 ###############################################################################
 # Random stuff from Matthias Bynen's dotfiles
@@ -47,9 +53,5 @@ alias showdesktopicons="defaults write com.apple.finder CreateDesktop -bool true
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 # Merge PDF files (Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`)
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-    alias "$method"="lwp-request -m '$method'"
-done
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"

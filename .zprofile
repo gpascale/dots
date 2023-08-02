@@ -3,13 +3,21 @@
 # 
 
 # Homebrew installations
-PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+arch_name="$(uname -m)"
+
+if [ "${arch_name}" = "x86_64" ]; then
+  PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+else
+  PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
+fi
+
 # Personal Scripts
 PATH=$HOME/scripts:$PATH
 
 ###############################################################################
 # Random other env vars and stuff
 
+export ZSH_CUSTOM="$HOME/.appsettings/zsh/themes"
 export POSTGRES_DIR="/Users/gtp/Library/Application Support/Postgres/var-11"
 export NVM_INSTALL_DIR="/opt/homebrew/opt/nvm"
 export CONDA_DIR="$HOME/anaconda3"
