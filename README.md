@@ -10,4 +10,8 @@ cd .scripts/
 ./bootstrap.sh
 ./install.sh
 ./macosh.sh
+
+# BetterSnapTool
+cp -r ~/.appsettings/BetterSnapTool/AppSupport/* ~/Library/Application\ Support/BetterSnapTool/
+cp -r ~/.appsettings/BetterSnapTool/com.hegenberg.BetterSnapTool.plist ~/Library/Application\ Support
 ```
