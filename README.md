@@ -1,7 +1,13 @@
 Usage:
 
-1. git clone --bare https://github.com/gpascale/dots.git $HOME/.cfg
+```
+git clone --bare git@github.com:gpascale/dots.git $HOME/.cfg
 
-2. ./scripts/.bootstrap.sh
+git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
 
-3. ./scripts/.install.sh
+cd .scripts/
+
+./bootstrap.sh
+
+./install.sh
+```
