@@ -72,8 +72,9 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # GREG CUSTOMIZATIONS
 
 # initial key repeat of 10 is a little too fast - accidentally spam key when trying to hit once
-defaults write NSGlobalDomain KeyRepeat -int 1.5
-defaults write NSGlobalDomain InitialKeyRepeat -int 17
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Completely disable the dock (from https://apple.stackexchange.com/questions/59556/is-there-a-way-to-completely-disable-dock)
-defaults write com.apple.dock autohide-delay -float 1000; killall Dock
+defaults write com.apple.Dock autohide -int 1
+defaults write com.apple.dock autohide-delay -float 1000 && killall Dock

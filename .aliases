@@ -17,11 +17,8 @@ alias .....="cd ../../../.."
 alias t="tmux"
 alias n="npm"
 alias code="code"
-alias iplogstage="~/git/interprime/platform/api/tail-logs.sh staging"
-alias iplogprod="~/git/interprime/platform/api/tail-logs.sh production"
-alias ipsshprod="(cd ~/git/interprime/platform/api && eb ssh api-prod)"
-alias jupy="/Users/gtp/opt/anaconda3/envs/jupy/bin/jupyter-notebook --no-browser --NotebookApp.token='' --notebook-dir='/Users/gtp/git'"
 alias xl="open -a \"Microsoft Excel\""
+alias history="history 1"
 alias h=history
 alias y=yarn
 alias clab=clone-and-browse
@@ -34,9 +31,7 @@ alias axon='ssh -t axon "cd /home/greg/git/emotiv-ml; zsh --login"'
 alias x86='env /usr/bin/arch -x86_64 /bin/zsh --login'
 alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
 
-
 ###############################################################################
-# Random stuff from Matthias Bynen's dotfiles
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

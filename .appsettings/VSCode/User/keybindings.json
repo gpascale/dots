@@ -52,8 +52,22 @@
     "command": "workbench.action.navigateUp"
   },
   {
+    "key": "ctrl+up",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
     "key": "ctrl+down",
-    "command": "workbench.action.navigateDown"
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "cmd+shift+t",
+    "command": "workbench.action.closePanel"
   },
   {
     "key": "cmd+shift+0",
@@ -168,12 +182,12 @@
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code'"
   },
   {
-    "key": "cmd+shift+k",
+    "key": "cmd+alt+j",
     "command": "notebook.cell.insertCodeCellBelow",
     "when": "notebookCellListFocused"
   },
   {
-    "key": "cmd+shift+j",
+    "key": "cmd+alt+k",
     "command": "notebook.cell.insertCodeCellAbove",
     "when": "notebookCellListFocused"
   },
@@ -196,5 +210,15 @@
     "key": "cmd+alt+up",
     "command": "notebook.cell.moveUp",
     "when": "notebookCellListFocused"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "editor.action.transposeLetters",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-editor.action.transposeLetters",
+    "when": "textInputFocus && !editorReadonly"
   },
 ]

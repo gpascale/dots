@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 22,
+  "editor.fontSize": 19,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
@@ -39,9 +39,6 @@
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontWeight": "bold",
-  "terminal.integrated.fontSize": 18,
-  "terminal.integrated.lineHeight": 1.2,
   "[plaintext]": {
     "editor.wordWrap": "on"
   },
@@ -105,5 +102,39 @@
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
+  },
+  "workbench.activityBar.visible": false,
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.localEchoLatencyThreshold": -1,
+  "terminal.integrated.localEchoStyle": "dim",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontWeightBold": "bold",
+  "terminal.integrated.minimumContrastRatio": 1,
+  "workbench.colorCustomizations": {
+    "terminalCursor.foreground": "#04f933",
+    "terminal.background": "#001b23",
+    "terminal.foreground": "#fffefe",
+    "terminal.ansiBlack": "#948b8b",
+    "terminal.ansiBrightBlack": "#948b8b",
+    "terminal.ansiBlue": "#00abfe",
+    "terminal.ansiBrightBlue": "#00abfe",
+    "terminal.ansiCyan": "#14f3de",
+    "terminal.ansiBrightCyan": "#14f3de",
+    "terminal.ansiGreen": "#67f900",
+    "terminal.ansiBrightGreen": "#67f900",
+    "terminal.ansiMagenta": "#d23581",
+    "terminal.ansiBrightMagenta": "#d23581",
+    "terminal.ansiRed": "#db312f",
+    "terminal.ansiBrightRed": "#db312f",
+    "terminal.ansiWhite": "#fffefe",
+    "terminal.ansiBrightWhite": "#fffefe",
+    "terminal.ansiYellow": "#fbfb00",
+    "terminal.ansiBrightYellow": "#fbfb00",
+    "terminal.selectionBackground": "#4392a4",
+    "terminal.selectionForeground": "#fffefe"
   }
 }

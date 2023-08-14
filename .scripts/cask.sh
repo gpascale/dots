@@ -11,3 +11,4 @@ brew install --cask pdf-expert
 brew install --cask postico
 brew install --cask slack
 brew install --cask visual-studio-code
+brew install --cask discord
