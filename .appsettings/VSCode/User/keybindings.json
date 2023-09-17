@@ -221,4 +221,10 @@
     "command": "-editor.action.transposeLetters",
     "when": "textInputFocus && !editorReadonly"
   },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "args": "run python script",
+    "when": "editorTextFocus"
+  }
 ]

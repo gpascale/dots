@@ -1,7 +1,7 @@
 {
   "editor.fontSize": 19,
   "editor.tabSize": 2,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.minimap.enabled": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "json.format.enable": true,
@@ -136,5 +136,6 @@
     "terminal.ansiBrightYellow": "#fbfb00",
     "terminal.selectionBackground": "#4392a4",
     "terminal.selectionForeground": "#fffefe"
-  }
+  },
+  "github.copilot.advanced": {}
 }
