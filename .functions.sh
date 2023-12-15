@@ -17,6 +17,10 @@ function docker-remove-all-containers() {
 function docker-remove-all-images() {
     docker rmi $(docker images -qa)
 }
+function docker-run-and-attach() {
+    local pid=$(docker run $@)
+    echo $pid
+}
 
 function docker-full-reset() {
     docker-kill-all
@@ -35,4 +39,12 @@ function killbyname() {
 	echo "killing $name ($pid)"
 	kill -9 $pid
     done
+}
+
+function get_port_user() {
+    echo "$(lsof -nP -iTCP -sTCP:LISTEN | grep $1)"
+    pid=$(lsof -nP -iTCP -sTCP:LISTEN | grep $1 | awk  '{print $2}')
+    echo "\npid: $pid\n"
+    lsof -p $pid
+    echo ""
 }
