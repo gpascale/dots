@@ -8,7 +8,7 @@ alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Stuff I created
 
 alias e=emacs
-alias ll="ls -al"
+alias ll="ls -alh"
 alias .="source"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -27,7 +27,8 @@ alias da=docker_attach
 alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=SharedArrayBuffer & >/dev/null 2>&1'
 alias curl='curl --silent'
-alias axon='ssh -t axon "cd /home/greg/git/emotiv-ml; zsh --login"'
+alias axon='ssh -t axon "cd /home/greg/git/e14; zsh --login"'
+alias soma='ssh -t soma'
 alias x86='env /usr/bin/arch -x86_64 /bin/zsh --login'
 alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
 
