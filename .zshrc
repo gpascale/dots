@@ -21,6 +21,11 @@ source $HOME/.functions.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_INSTALL_DIR/nvm.sh" ] && \. "$NVM_INSTALL_DIR/nvm.sh"  # This loads nvm
 
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt INC_APPEND_HISTORY_TIME
+
 # M1 env stuff
 # arch_name="$(uname -m)"
 # if [ "${arch_name}" = "x86_64" ]; then
@@ -31,8 +36,15 @@ export NVM_DIR="$HOME/.nvm"
 
 setopt autocd
 
+
 if [ -f "$HOME/.zshrc.local" ]; then
   source "$HOME/.zshrc.local"
 fi
 
+# start ssh-agent to avoid having to type password all the time
+#eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/id_ed25519
 
+eval `keychain --agents ssh --eval id_ed25519`
+
+. $HOME/git/e14/dev.env/bin/activate

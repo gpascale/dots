@@ -1,3 +1,4 @@
+#!/bin/zsh
 
 function mingz () {
     curl -sL wzrd.in/standalone/"$1"|uglifyjs -mc 2>/dev/null|gzip -c|wc -c;
@@ -47,4 +48,20 @@ function get_port_user() {
     echo "\npid: $pid\n"
     lsof -p $pid
     echo ""
+}
+
+function print_with_highlight() {
+    line=$1
+    token=$(echo $line | tr -s ' ' | cut -d" " -f5-)
+    repl_token="%F{white}$token%f"
+    highlighted_line="${line//$token/$repl_token}"
+    print -P "%F{black}$highlighted_line%f"
+}
+
+function history_with_color() {
+    history -di $@ | while IFS= read -r line; do print_with_highlight "$line"; done
+}
+
+function nv_kill_all() {
+    nvidia-smi | grep $(whoami) | awk '{print $5}' | xargs -r kill
 }

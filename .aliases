@@ -18,8 +18,8 @@ alias t="tmux"
 alias n="npm"
 alias code="code"
 alias xl="open -a \"Microsoft Excel\""
-alias history="history 1"
-alias h=history
+alias h="history -di -25"
+alias hg="history -di 0 | grep"
 alias y=yarn
 alias clab=clone-and-browse
 alias tree='tree -h' # Make tree print out sizes by default
@@ -28,7 +28,8 @@ alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=SharedArrayBuffer & >/dev/null 2>&1'
 alias curl='curl --silent'
 alias axon='ssh -t axon "cd /home/greg/git/e14; zsh --login"'
-alias soma='ssh -t soma'
+alias soma='ssh -t soma "cd /home/greg/git/e14; zsh --login"'
+
 alias x86='env /usr/bin/arch -x86_64 /bin/zsh --login'
 alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
 
