@@ -29,6 +29,8 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --e
 alias curl='curl --silent'
 alias axon='ssh -t axon "cd /home/greg/git/e14; zsh --login"'
 alias soma='ssh -t soma "cd /home/greg/git/e14; zsh --login"'
+alias work='ssh -t work "cd /data"'
+alias vault='ssh -t vault "cd /data"'
 
 alias x86='env /usr/bin/arch -x86_64 /bin/zsh --login'
 alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
